@@ -57,8 +57,8 @@ If you are using macOS with an M1 chip, you need to start Colima and set the Doc
 
 **For M1 Mac users**
 
-`export TESTCONTAINERS_DOCKER_SOCKET_OVERRIDE=/var/run/docker.sock
-export DOCKER_HOST="unix://${HOME}/.colima/docker.sock"
+`export TESTCONTAINERS_DOCKER_SOCKET_OVERRIDE=/var/run/docker.sock &&
+export DOCKER_HOST="unix://${HOME}/.colima/docker.sock" &&
 sudo ln -s $HOME/.colima/default/docker.sock /var/run/docker.sock`
 
 2. Run the tests
